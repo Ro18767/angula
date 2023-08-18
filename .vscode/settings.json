@@ -1,0 +1,14 @@
+{
+    "hidefiles.configurationType": "global",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        ".vscode/": true,
+        ".svelte-kit/": true,
+        "node_modules/": true
+    },
+    "hidefiles.selectedProfile": "Strict"
+}
