@@ -3,20 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { YMDHMComponent } from './y-m-d-h-m/y-m-d-h-m.component';
-import { YMDHMSComponent } from './y-m-d-h-m-s/y-m-d-h-m-s.component';
-import { UserComponent } from './user/user.component';
+import { TextComponent } from './task/text/text.component';
+import { SvgFiguresComponent } from './task/svg-figures/svg-figures.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    YMDHMComponent,
-    YMDHMSComponent,
-    UserComponent,
+    TextComponent,
+    SvgFiguresComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,27 @@
+<div>
+    <input type="color" [(ngModel)]="fillColor" />
+<svg viewBox="0 0 300 300" [style.backgroundColor]="bgColor" (contextmenu)="changeColor($event)">
+  <g [attr.color]="fillColor">
+    <circle
+      [style.backgroundColor]="fillColor"
+      (wheel)="handleWhell($event)"
+      (dblclick)="handleDblClick()"
+      cx="150"
+      cy="150"
+      [class.opacity]="opacity"
+      [attr.r]="radius"
+      fill="currentcolor"
+    ></circle>
+  </g>
+</svg>
+
+<ul>
+  <li>fillColor: {{ fillColor }}</li>
+  <li>radius: {{ radius }}</li>
+  <li>opacity: {{ opacity }}</li>
+  <li>bgColor: {{ opacity_changecount }}</li>
+  <li>bgColor: {{ bgColor }}</li>
+  <li>bgColor: {{ bgColor_changecount }}</li>
+</ul>
+
+</div>
