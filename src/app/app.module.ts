@@ -20,7 +20,7 @@ import { LoggerService } from './logger.service';
     CatalogComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [CatalogService, LoggerService],
+  providers: [LoggerService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
