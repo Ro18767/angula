@@ -1,25 +1,10 @@
 BUILD
 
-<!-- <app-user></app-user> -->
-<!-- <nav>
-  <ul>
-    <li>
-        <a routerLink="">list</a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-        <a routerLink="/add">add</a>
-    </li>
-  </ul>
-  <ul>
-    <li>
-        <a routerLink="/delete">delete</a>
-    </li>
-  </ul>
-</nav>
+<div>{{ date123 | date :'hh:ss:mm'}}</div>
+<div>{{{ name: "Jo", age: 2, phone: 332255 } | pipe:['name', 'phone']:'|'}}</div>
+<div>{{{ name: "Jo", age: 2, phone: 332255 } | pipe:['phone', 'age']:' . '}}</div>
+<div>{{123.45 | currency : "USD" : "symbol-narrow"}}</div>
 
-<router-outlet></router-outlet> -->
+<!-- <router-outlet></router-outlet> -->
 
-<app-catalog></app-catalog>
-<app-catalog></app-catalog>
+<!-- <app-catalog></app-catalog> -->
